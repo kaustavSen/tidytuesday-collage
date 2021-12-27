@@ -51,5 +51,5 @@ tt_data_2021 %>%
             total_likes = sum(favorite_count),
             total_retweets = sum(retweet_count),
             num_posts = n()) %>% 
-  mutate(img_url = paste0("/images/", screen_name, ".jpg")) %>% 
+  mutate(img_url = paste0("images/", screen_name, ".jpg")) %>% 
   write_csv("plot_data.csv")
