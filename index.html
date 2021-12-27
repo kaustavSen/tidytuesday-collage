@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TidyTuesday Collage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>#TidyTuesday 2021</h1>
+  <p class="subheading">Participants with more than 10 submissions over 2021</p>
+  <div id="wrapper">
+    <div id="tooltip" class="tooltip">
+      <div class="tooltip-name">
+        <span id="name"></span>
+      </div>
+      <div class="tooltip-posts">
+        Posts <span id="posts"></span>
+    </div>
+      <div class="tooltip-likes">
+        Likes <span id="likes"></span>
+    </div>
+      <div class="tooltip-retweet">
+        Retweets <span id="retweet"></span>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.2.1/d3.min.js" ></script>
+  <script src="chart.js"></script>
+</body>
+</html>

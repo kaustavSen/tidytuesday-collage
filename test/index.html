@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images in SVG</title>
+  </head>
+  <body>
+    <svg width="500" height="500">
+      <defs>
+        <pattern id="r4ds_image" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+          <image height="1" width="1" preserveAspectRatio="none" xlink:href="image.jpg"></image>
+        </pattern>
+        <pattern id="geo_image" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+          <image height="1" width="1" preserveAspectRatio="none" xlink:href="image_2.jpg"></image>
+        </pattern>
+        <pattern id="tom_image" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+          <image height="1" width="1" preserveAspectRatio="none" xlink:href="image_3.jpg"></image>
+        </pattern>
+      </defs>
+      <circle cx="100" cy="100" r="50" fill="url(#r4ds_image)"></circle>
+      <circle cx="100" cy="100" r="55" fill="none" stroke="steelblue" stroke-width="3"></circle>
+      <circle cx="250" cy="200" r="80" fill="url(#geo_image)"></circle>
+      <circle cx="250" cy="200" r="85" fill="none" stroke="purple" stroke-width="3"></circle>
+      <circle cx="300" cy="50" r="30" fill="url(#tom_image)"></circle>
+      <circle cx="300" cy="50" r="35" fill="none" stroke="yellowgreen" stroke-width="3"></circle>
+    </svg>
+  </body>
+</html>

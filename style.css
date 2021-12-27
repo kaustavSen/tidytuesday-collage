@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700;900&display=swap');
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter';
+  font-size: 16px;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+
+.subheading {
+  font-weight: 700;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  color: #a7a7a7;
+  margin-top: 8px;
+  margin-bottom: 6em;
+}
+
+svg {
+  overflow: visible;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  top: -14px;
+  left: 0;
+  padding: 0.6em 1em;
+  background: #fff;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 0.9em;
+  border: 1px solid #ddd;
+  z-index: 3;
+  transition: all 0.1s ease-out;
+  pointer-events: none;
+}
+
+.tooltip:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: translate(-50%, 50%) rotate(45deg);
+  transform-origin: center center;
+  z-index: 3;
+}
+
+#name {
+  font-weight: 900;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: #a7a7a7;
+}
+
+.tooltip-likes, .tooltip-retweet, .tooltip-posts {
+  font-size: 0.9em;
+  color: #d3d3d3;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+#posts {
+  color: cornflowerblue;
+  font-weight: 900;
+}
+
+#likes {
+  color: #e76f51;
+  font-weight: 900;
+}
+
+#retweet {
+  color: #006d77;
+  font-weight: 900;
+}
+
+.label-size {
+  font-size: 0.8em;
+  font-weight: 200;
+  font-style: oblique;
+  fill: #a7a7a7
+}
